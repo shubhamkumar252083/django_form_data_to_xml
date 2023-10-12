@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">  
+  {% for text in texts %}
+      <label for="{{ text }}">{{ text }}</label>
+      <input type="text" name="{{ text }}" id="{{ text }}" value="">
+      <br>
+  {% endfor %}
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

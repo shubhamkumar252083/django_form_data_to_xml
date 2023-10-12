@@ -1,0 +1,45 @@
+__pycache__
+db.sqlite3
+media
+venv
+
+# files and folders
+test
+test.sh
+test.py
+test2.py
+test3.py
+test4.py
+test5.py
+note.txt
+account_view_old.py
+password.py
+model_on_server.py
+logFiles
+.env
+calculate_distance/test2
+test_cases
+orm_scripts
+cron/cron_log.txt
+
+# Python # 
+*.py[cod]
+*$py.class
+mysql_dump
+
+
+# Visual Studio Code # 
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# on server
+server.crt
+server.key
+nohup.in
+nohup.out
+staticfiles
+
