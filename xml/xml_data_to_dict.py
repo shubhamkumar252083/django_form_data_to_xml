@@ -1,0 +1,169 @@
+import xml.etree.ElementTree as ET
+
+def convert_to_desired_format(element, path=''):
+    result = {}
+    # Add the current element to the path
+    path += '/' + element.tag
+    # Process attributes of the current element
+    if element.attrib:
+        for attr_name, attr_value in element.attrib.items():
+            attr_path = f"{path} (attribute_name)-{attr_name}"
+            result[attr_path] = attr_value
+    # Process text content of the element
+    if element.text and element.text.strip():
+        result[path] = element.text.strip()
+    # Recursively process child elements
+    for child in element:
+        result.update(convert_to_desired_format(child, path))
+    return result
+
+xml_string = '''
+<root>
+<check>
+  <MessageHeaderDocument>
+    <ram__colon__ID>f17ec2f9-a67d-4785-9a42-272edc272269</ram__colon__ID>
+    <ram__colon__Name>Air Waybill</ram__colon__Name>
+    <ram__colon__TypeCode listID="1001" listVersionID="D09A">741</ram__colon__TypeCode>
+    <ram__colon__IssueDateTime>2022-11-11T10__colon__32__colon__30</ram__colon__IssueDateTime>
+    <ram__colon__PurposeCode>Creation</ram__colon__PurposeCode>
+    <ram__colon__VersionID>3</ram__colon__VersionID>
+    <ram__colon__ConversationID>dbb22bf1-840a-47e2-9409-51b620c20973</ram__colon__ConversationID>
+    <ram__colon__SenderParty>
+      <ram__colon__PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram__colon__PrimaryID>
+    </ram__colon__SenderParty>
+    <ram__colon__RecipientParty>
+      <ram__colon__PrimaryID schemeID="P">CSGCUS86CUSGW</ram__colon__PrimaryID>
+    </ram__colon__RecipientParty>
+  </MessageHeaderDocument>
+  <BusinessHeaderDocument>
+    <ram__colon__ID>176-01112228</ram__colon__ID>
+    <ram__colon__SignatoryCarrierAuthentication>
+      <ram__colon__ActualDateTime>2021-12-10T00__colon__00__colon__00</ram__colon__ActualDateTime>
+      <ram__colon__Signatory>DHL EXPRESS</ram__colon__Signatory>
+      <ram__colon__IssueAuthenticationLocation>
+        <ram__colon__Name>SINGAPORE</ram__colon__Name>
+      </ram__colon__IssueAuthenticationLocation>
+    </ram__colon__SignatoryCarrierAuthentication>
+  </BusinessHeaderDocument>
+  <MasterConsignment>
+    <ram__colon__NilCarriageValueIndicator>true</ram__colon__NilCarriageValueIndicator>
+    <ram__colon__NilCustomsValueIndicator>true</ram__colon__NilCustomsValueIndicator>
+    <ram__colon__DeclaredValueForCustomsAmount currencyID="TWD">0</ram__colon__DeclaredValueForCustomsAmount>
+    <ram__colon__NilInsuranceValueIndicator>true</ram__colon__NilInsuranceValueIndicator>
+    <ram__colon__InsuranceValueAmount currencyID="TWD">0</ram__colon__InsuranceValueAmount>
+    <ram__colon__TotalChargePrepaidIndicator>true</ram__colon__TotalChargePrepaidIndicator>
+    <ram__colon__TotalDisbursementPrepaidIndicator>true</ram__colon__TotalDisbursementPrepaidIndicator>
+    <ram__colon__IncludedTareGrossWeightMeasure unitCode="KGM">24</ram__colon__IncludedTareGrossWeightMeasure>
+    <ram__colon__GrossVolumeMeasure unitCode="MTQ">32</ram__colon__GrossVolumeMeasure>
+    <ram__colon__TotalPieceQuantity>5</ram__colon__TotalPieceQuantity>
+    <ram__colon__ConsignorParty>
+      <ram__colon__Name>SENSESOFT 002</ram__colon__Name>
+      <ram__colon__PostalStructuredAddress>
+        <ram__colon__StreetName>1 BDOTTS RD.</ram__colon__StreetName>
+        <ram__colon__CityName>SINGAPORE</ram__colon__CityName>
+        <ram__colon__CountryID schemeVersionID="second edition 2006">SG</ram__colon__CountryID>
+      </ram__colon__PostalStructuredAddress>
+    </ram__colon__ConsignorParty>
+    <ram__colon__ConsigneeParty>
+      <ram__colon__Name>DHL EXPRESS</ram__colon__Name>
+      <ram__colon__PostalStructuredAddress>
+        <ram__colon__StreetName>123 ST. LAGOS</ram__colon__StreetName>
+        <ram__colon__CityName>BANGLADESH</ram__colon__CityName>
+        <ram__colon__CountryID schemeVersionID="second edition 2006">BR</ram__colon__CountryID>
+      </ram__colon__PostalStructuredAddress>
+    </ram__colon__ConsigneeParty>
+    <ram__colon__FreightForwarderParty>
+      <ram__colon__Name>DHL EXPRESS</ram__colon__Name>
+      <ram__colon__CargoAgentID>1234567</ram__colon__CargoAgentID>
+      <ram__colon__FreightForwarderAddress>
+        <ram__colon__CityName>SINGAPORE</ram__colon__CityName>
+      </ram__colon__FreightForwarderAddress>
+    </ram__colon__FreightForwarderParty>
+    <ram__colon__AssociatedParty>
+      <ram__colon__Name>DHL EXPRESS</ram__colon__Name>
+      <ram__colon__RoleCode listID="3035" listVersionID="D09A">NI</ram__colon__RoleCode>
+      <ram__colon__PostalStructuredAddress>
+        <ram__colon__StreetName>123 ST. LAGOS</ram__colon__StreetName>
+        <ram__colon__CityName>BANGLADESH</ram__colon__CityName>
+        <ram__colon__CountryID schemeVersionID="second edition 2006">BR</ram__colon__CountryID>
+      </ram__colon__PostalStructuredAddress>
+    </ram__colon__AssociatedParty>
+    <ram__colon__OriginLocation>
+      <ram__colon__ID>SIN</ram__colon__ID>
+    </ram__colon__OriginLocation>
+    <ram__colon__FinalDestinationLocation>
+      <ram__colon__ID>DAC</ram__colon__ID>
+    </ram__colon__FinalDestinationLocation>
+    <ram__colon__SpecifiedLogisticsTransportMovement>
+      <ram__colon__StageCode />
+      <ram__colon__ID>EK0111</ram__colon__ID>
+      <ram__colon__UsedLogisticsTransportMeans>
+        <ram__colon__Name>EK</ram__colon__Name>
+      </ram__colon__UsedLogisticsTransportMeans>
+      <ram__colon__ArrivalEvent>
+        <ram__colon__ScheduledOccurrenceDateTime>2021-12-05T00__colon__00__colon__00</ram__colon__ScheduledOccurrenceDateTime>
+        <ram__colon__OccurrenceArrivalLocation>
+          <ram__colon__ID>BKK</ram__colon__ID>
+          <ram__colon__Name>QR</ram__colon__Name>
+        </ram__colon__OccurrenceArrivalLocation>
+      </ram__colon__ArrivalEvent>
+      <ram__colon__DepartureEvent>
+        <ram__colon__ScheduledOccurrenceDateTime>2021-12-05T00__colon__00__colon__00</ram__colon__ScheduledOccurrenceDateTime>
+      </ram__colon__DepartureEvent>
+    </ram__colon__SpecifiedLogisticsTransportMovement>
+    <ram__colon__ApplicableOriginCurrencyExchange>
+      <ram__colon__SourceCurrencyCode listID="ISO 4217 3A" listVersionID="2007-06-18">SGD</ram__colon__SourceCurrencyCode>
+    </ram__colon__ApplicableOriginCurrencyExchange>
+    <ram__colon__ApplicableRating>
+      <ram__colon__TypeCode>F</ram__colon__TypeCode>
+      <ram__colon__IncludedMasterConsignmentItem>
+        <ram__colon__SequenceNumeric>1</ram__colon__SequenceNumeric>
+        <ram__colon__GrossWeightMeasure unitCode="KGM">5</ram__colon__GrossWeightMeasure>
+        <ram__colon__PieceQuantity>1</ram__colon__PieceQuantity>
+        <ram__colon__NatureIdentificationTransportCargo>
+          <ram__colon__Identification>CONSOLLAPTOPS 12345 90416274 DELIVERY</ram__colon__Identification>
+        </ram__colon__NatureIdentificationTransportCargo>
+        <ram__colon__ApplicableFreightRateServiceCharge>
+          <ram__colon__CategoryCode>M</ram__colon__CategoryCode>
+          <ram__colon__ChargeableWeightMeasure unitCode="KGM">3.523</ram__colon__ChargeableWeightMeasure>
+          <ram__colon__AppliedRate>5</ram__colon__AppliedRate>
+          <ram__colon__AppliedAmount currencyID="SGD">5</ram__colon__AppliedAmount>
+        </ram__colon__ApplicableFreightRateServiceCharge>
+      </ram__colon__IncludedMasterConsignmentItem>
+      <ram__colon__IncludedMasterConsignmentItem__duplicate__>
+        <ram__colon__SequenceNumeric>2</ram__colon__SequenceNumeric>
+        <ram__colon__Information>NDA</ram__colon__Information>
+      </ram__colon__IncludedMasterConsignmentItem__duplicate__>
+    </ram__colon__ApplicableRating>
+    <ram__colon__ApplicableTotalRating>
+      <ram__colon__TypeCode>F</ram__colon__TypeCode>
+      <ram__colon__ApplicablePrepaidCollectMonetarySummation>
+        <ram__colon__PrepaidIndicator>true</ram__colon__PrepaidIndicator>
+        <ram__colon__WeightChargeTotalAmount currencyID="SGD">800</ram__colon__WeightChargeTotalAmount>
+        <ram__colon__GrandTotalAmount currencyID="SGD">800</ram__colon__GrandTotalAmount>
+      </ram__colon__ApplicablePrepaidCollectMonetarySummation>
+    </ram__colon__ApplicableTotalRating>
+  </MasterConsignment>
+</check>
+</root>
+'''
+
+
+def get_input_fields(xml_string):
+  input_fields = []
+  root = ET.fromstring(xml_string)
+  result_dict = convert_to_desired_format(root, 'root')
+  # for key, value in result_dict.items():
+  #     print(f"{key} = {value}")
+  #     input_fields.append(key)
+  return result_dict
+
+x = get_input_fields(xml_string)
+print(x)
+
+'''
+text_to_add = {
+  "start":'<Waybill xmlns:rsm="iata:housewaybill:1" xmlns:ram="iata:datamodel:3" xmlns="iata:waybill:1">',
+  "end":'</Waybill>'
+  }
+'''

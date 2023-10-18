@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1><a href="{% url 'xml_form' xml_form_name="form_one" %}">form one</a></h1>
+<h1><a href="{% url 'xml_form' xml_form_name="form_two" %}">form two</a></h1>
+<h1><a href="{% url 'xml_form' xml_form_name="form_three" %}">form three</a></h1>
+{% endblock %}

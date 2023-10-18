@@ -1,0 +1,129 @@
+<rsm__colon__HouseWaybill xmlns__colon__ram="iata__colon__datamodel__colon__3" xmlns__colon__rsm="iata__colon__housewaybill__colon__1">
+  <rsm__colon__MessageHeaderDocument>
+    <ram__colon__ID>3e756a95-e6b2-4632-8254-3f9cf04057ce</ram__colon__ID>
+    <ram__colon__Name>House waybill</ram__colon__Name>
+    <ram__colon__TypeCode listID="1001" listVersionID="D09A">703</ram__colon__TypeCode>
+    <ram__colon__IssueDateTime>2022-11-11T10__colon__32__colon__35</ram__colon__IssueDateTime>
+    <ram__colon__PurposeCode>Creation</ram__colon__PurposeCode>
+    <ram__colon__VersionID>3.00</ram__colon__VersionID>
+    <ram__colon__ConversationID>69184383-297c-4e44-ba34-db37a3c63f26</ram__colon__ConversationID>
+    <ram__colon__SenderParty>
+      <ram__colon__PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram__colon__PrimaryID>
+    </ram__colon__SenderParty>
+    <ram__colon__RecipientParty>
+      <ram__colon__PrimaryID schemeID="P">CSGCUS86CUSGW</ram__colon__PrimaryID>
+    </ram__colon__RecipientParty>
+  </rsm__colon__MessageHeaderDocument>
+  <rsm__colon__BusinessHeaderDocument>
+    <ram__colon__ID>SIN1702</ram__colon__ID>
+    <ram__colon__SignatoryConsignorAuthentication>
+      <ram__colon__Signatory>XXX</ram__colon__Signatory>
+    </ram__colon__SignatoryConsignorAuthentication>
+    <ram__colon__SignatoryCarrierAuthentication>
+      <ram__colon__ActualDateTime>2002-07-01T05__colon__10__colon__10</ram__colon__ActualDateTime>
+      <ram__colon__Signatory>XXX</ram__colon__Signatory>
+      <ram__colon__IssueAuthenticationLocation>
+        <ram__colon__Name>XXX</ram__colon__Name>
+      </ram__colon__IssueAuthenticationLocation>
+    </ram__colon__SignatoryCarrierAuthentication>
+  </rsm__colon__BusinessHeaderDocument>
+  <rsm__colon__MasterConsignment>
+    <ram__colon__IncludedTareGrossWeightMeasure unitCode="KGM">23</ram__colon__IncludedTareGrossWeightMeasure>
+    <ram__colon__TotalPieceQuantity>5</ram__colon__TotalPieceQuantity>
+    <ram__colon__TransportContractDocument>
+      <ram__colon__ID>176-01112228</ram__colon__ID>
+    </ram__colon__TransportContractDocument>
+    <ram__colon__OriginLocation>
+      <ram__colon__ID>SIN</ram__colon__ID>
+    </ram__colon__OriginLocation>
+    <ram__colon__FinalDestinationLocation>
+      <ram__colon__ID>DAC</ram__colon__ID>
+    </ram__colon__FinalDestinationLocation>
+    <ram__colon__IncludedHouseConsignment>
+      <ram__colon__NilCarriageValueIndicator>true</ram__colon__NilCarriageValueIndicator>
+      <ram__colon__NilCustomsValueIndicator>true</ram__colon__NilCustomsValueIndicator>
+      <ram__colon__DeclaredValueForCustomsAmount currencyID="TWD">0</ram__colon__DeclaredValueForCustomsAmount>
+      <ram__colon__NilInsuranceValueIndicator>true</ram__colon__NilInsuranceValueIndicator>
+      <ram__colon__InsuranceValueAmount currencyID="TWD">0</ram__colon__InsuranceValueAmount>
+      <ram__colon__TotalChargePrepaidIndicator>true</ram__colon__TotalChargePrepaidIndicator>
+      <ram__colon__TotalDisbursementPrepaidIndicator>true</ram__colon__TotalDisbursementPrepaidIndicator>
+      <ram__colon__IncludedTareGrossWeightMeasure unitCode="KGM">0.60</ram__colon__IncludedTareGrossWeightMeasure>
+      <ram__colon__TotalPieceQuantity>2</ram__colon__TotalPieceQuantity>
+      <ram__colon__SummaryDescription>H1M1</ram__colon__SummaryDescription>
+      <ram__colon__ConsignorParty>
+        <ram__colon__Name>NANJOMG INDUSTRIAL CO LTD</ram__colon__Name>
+        <ram__colon__PostalStructuredAddress>
+          <ram__colon__PostcodeCode>243</ram__colon__PostcodeCode>
+          <ram__colon__StreetName>NO102 SHOU SHAN ROAD</ram__colon__StreetName>
+          <ram__colon__CityName>NEW TAIPEI</ram__colon__CityName>
+          <ram__colon__CountryID schemeVersionID="second edition 2006">TW</ram__colon__CountryID>
+        </ram__colon__PostalStructuredAddress>
+        <ram__colon__DefinedTradeContact>
+          <ram__colon__DirectTelephoneCommunication>
+            <ram__colon__CompleteNumber>000000</ram__colon__CompleteNumber>
+          </ram__colon__DirectTelephoneCommunication>
+        </ram__colon__DefinedTradeContact>
+      </ram__colon__ConsignorParty>
+      <ram__colon__ConsigneeParty>
+        <ram__colon__Name>PT ASTRA OTOPARTS TBK</ram__colon__Name>
+        <ram__colon__PostalStructuredAddress>
+          <ram__colon__PostcodeCode>14250</ram__colon__PostcodeCode>
+          <ram__colon__StreetName>JL PEGANGSAAN DUA KM 2 2 PEGANGSAAN</ram__colon__StreetName>
+          <ram__colon__CityName>NEW YORK</ram__colon__CityName>
+          <ram__colon__CountryID schemeVersionID="second edition 2006">US</ram__colon__CountryID>
+        </ram__colon__PostalStructuredAddress>
+        <ram__colon__DefinedTradeContact>
+          <ram__colon__DirectTelephoneCommunication>
+            <ram__colon__CompleteNumber>00000</ram__colon__CompleteNumber>
+          </ram__colon__DirectTelephoneCommunication>
+        </ram__colon__DefinedTradeContact>
+      </ram__colon__ConsigneeParty>
+      <ram__colon__AssociatedParty>
+        <ram__colon__Name>PT ASTRA OTOPARTS TBK</ram__colon__Name>
+        <ram__colon__RoleCode listID="3035" listVersionID="D09A">NI</ram__colon__RoleCode>
+        <ram__colon__PostalStructuredAddress>
+          <ram__colon__PostcodeCode>14250</ram__colon__PostcodeCode>
+          <ram__colon__StreetName>JL PEGANGSAAN DUA KM 2 2 PEGANGSAAN</ram__colon__StreetName>
+          <ram__colon__CityName>NEW YORK</ram__colon__CityName>
+          <ram__colon__CountryID schemeVersionID="second edition 2006">US</ram__colon__CountryID>
+        </ram__colon__PostalStructuredAddress>
+        <ram__colon__DefinedTradeContact>
+          <ram__colon__DirectTelephoneCommunication>
+            <ram__colon__CompleteNumber>00000</ram__colon__CompleteNumber>
+          </ram__colon__DirectTelephoneCommunication>
+          <ram__colon__FaxCommunication>
+            <ram__colon__CompleteNumber />
+          </ram__colon__FaxCommunication>
+        </ram__colon__DefinedTradeContact>
+      </ram__colon__AssociatedParty>
+      <ram__colon__OriginLocation>
+        <ram__colon__ID>SIN</ram__colon__ID>
+      </ram__colon__OriginLocation>
+      <ram__colon__FinalDestinationLocation>
+        <ram__colon__ID>DAC</ram__colon__ID>
+      </ram__colon__FinalDestinationLocation>
+      <ram__colon__HandlingSPHInstructions>
+        <ram__colon__DescriptionCode>XXX</ram__colon__DescriptionCode>
+      </ram__colon__HandlingSPHInstructions>
+      <ram__colon__ApplicableOriginCurrencyExchange>
+        <ram__colon__SourceCurrencyCode listID="ISO 4217 3A" listVersionID="2007-06-18">TWD</ram__colon__SourceCurrencyCode>
+      </ram__colon__ApplicableOriginCurrencyExchange>
+      <ram__colon__IncludedHouseConsignmentItem>
+        <ram__colon__SequenceNumeric>1</ram__colon__SequenceNumeric>
+        <ram__colon__GrossWeightMeasure unitCode="KGM">0.60</ram__colon__GrossWeightMeasure>
+        <ram__colon__PieceQuantity>2</ram__colon__PieceQuantity>
+        <ram__colon__Information>NDA</ram__colon__Information>
+        <ram__colon__NatureIdentificationTransportCargo>
+          <ram__colon__Identification>H1M1</ram__colon__Identification>
+        </ram__colon__NatureIdentificationTransportCargo>
+        <ram__colon__TransportLogisticsPackage>
+          <ram__colon__ItemQuantity>2</ram__colon__ItemQuantity>
+          <ram__colon__GrossWeightMeasure unitCode="KGM">0.60</ram__colon__GrossWeightMeasure>
+        </ram__colon__TransportLogisticsPackage>
+        <ram__colon__ApplicableFreightRateServiceCharge>
+          <ram__colon__ChargeableWeightMeasure unitCode="KGM">0.60</ram__colon__ChargeableWeightMeasure>
+        </ram__colon__ApplicableFreightRateServiceCharge>
+      </ram__colon__IncludedHouseConsignmentItem>
+    </ram__colon__IncludedHouseConsignment>
+  </rsm__colon__MasterConsignment>
+</rsm__colon__HouseWaybill>

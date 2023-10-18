@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Waybill xmlns:rsm="iata:housewaybill:1" xmlns:ram="iata:datamodel:3" xmlns="iata:waybill:1">
+  <MessageHeaderDocument>
+    <ram:ID>f17ec2f9-a67d-4785-9a42-272edc272269</ram:ID>
+    <ram:Name>Air Waybill</ram:Name>
+    <ram:TypeCode listID="1001" listVersionID="D09A">741</ram:TypeCode>
+    <ram:IssueDateTime>2022-11-11T10:32:30</ram:IssueDateTime>
+    <ram:PurposeCode>Creation</ram:PurposeCode>
+    <ram:VersionID>3</ram:VersionID>
+    <ram:ConversationID>dbb22bf1-840a-47e2-9409-51b620c20973</ram:ConversationID>
+    <ram:SenderParty>
+      <ram:PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram:PrimaryID>
+    </ram:SenderParty>
+    <ram:RecipientParty>
+      <ram:PrimaryID schemeID="P">CSGCUS86CUSGW</ram:PrimaryID>
+    </ram:RecipientParty>
+  </MessageHeaderDocument>
+  <BusinessHeaderDocument>
+    <ram:ID>176-01112228</ram:ID>
+    <ram:SignatoryCarrierAuthentication>
+      <ram:ActualDateTime>2021-12-10T00:00:00</ram:ActualDateTime>
+      <ram:Signatory>DHL EXPRESS</ram:Signatory>
+      <ram:IssueAuthenticationLocation>
+        <ram:Name>SINGAPORE</ram:Name>
+      </ram:IssueAuthenticationLocation>
+    </ram:SignatoryCarrierAuthentication>
+  </BusinessHeaderDocument>
+  <MasterConsignment>
+    <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+    <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+    <ram:DeclaredValueForCustomsAmount currencyID="TWD">0</ram:DeclaredValueForCustomsAmount>
+    <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+    <ram:InsuranceValueAmount currencyID="TWD">0</ram:InsuranceValueAmount>
+    <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+    <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+    <ram:IncludedTareGrossWeightMeasure unitCode="KGM">24</ram:IncludedTareGrossWeightMeasure>
+    <ram:GrossVolumeMeasure unitCode="MTQ">32</ram:GrossVolumeMeasure>
+    <ram:TotalPieceQuantity>5</ram:TotalPieceQuantity>
+    <ram:ConsignorParty>
+      <ram:Name>SENSESOFT 002</ram:Name>
+      <ram:PostalStructuredAddress>
+        <ram:StreetName>1 BDOTTS RD.</ram:StreetName>
+        <ram:CityName>SINGAPORE</ram:CityName>
+        <ram:CountryID schemeVersionID="second edition 2006">SG</ram:CountryID>
+      </ram:PostalStructuredAddress>
+    </ram:ConsignorParty>
+    <ram:ConsigneeParty>
+      <ram:Name>DHL EXPRESS</ram:Name>
+      <ram:PostalStructuredAddress>
+        <ram:StreetName>123 ST. LAGOS</ram:StreetName>
+        <ram:CityName>BANGLADESH</ram:CityName>
+        <ram:CountryID schemeVersionID="second edition 2006">BR</ram:CountryID>
+      </ram:PostalStructuredAddress>
+    </ram:ConsigneeParty>
+    <ram:FreightForwarderParty>
+      <ram:Name>DHL EXPRESS</ram:Name>
+      <ram:CargoAgentID>1234567</ram:CargoAgentID>
+      <ram:FreightForwarderAddress>
+        <ram:CityName>SINGAPORE</ram:CityName>
+      </ram:FreightForwarderAddress>
+    </ram:FreightForwarderParty>
+    <ram:AssociatedParty>
+      <ram:Name>DHL EXPRESS</ram:Name>
+      <ram:RoleCode listID="3035" listVersionID="D09A">NI</ram:RoleCode>
+      <ram:PostalStructuredAddress>
+        <ram:StreetName>123 ST. LAGOS</ram:StreetName>
+        <ram:CityName>BANGLADESH</ram:CityName>
+        <ram:CountryID schemeVersionID="second edition 2006">BR</ram:CountryID>
+      </ram:PostalStructuredAddress>
+    </ram:AssociatedParty>
+    <ram:OriginLocation>
+      <ram:ID>SIN</ram:ID>
+    </ram:OriginLocation>
+    <ram:FinalDestinationLocation>
+      <ram:ID>DAC</ram:ID>
+    </ram:FinalDestinationLocation>
+    <ram:SpecifiedLogisticsTransportMovement>
+      <ram:StageCode />
+      <ram:ID>EK0111</ram:ID>
+      <ram:UsedLogisticsTransportMeans>
+        <ram:Name>EK</ram:Name>
+      </ram:UsedLogisticsTransportMeans>
+      <ram:ArrivalEvent>
+        <ram:ScheduledOccurrenceDateTime>2021-12-05T00:00:00</ram:ScheduledOccurrenceDateTime>
+        <ram:OccurrenceArrivalLocation>
+          <ram:ID>BKK</ram:ID>
+          <ram:Name>QR</ram:Name>
+        </ram:OccurrenceArrivalLocation>
+      </ram:ArrivalEvent>
+      <ram:DepartureEvent>
+        <ram:ScheduledOccurrenceDateTime>2021-12-05T00:00:00</ram:ScheduledOccurrenceDateTime>
+      </ram:DepartureEvent>
+    </ram:SpecifiedLogisticsTransportMovement>
+    <ram:ApplicableOriginCurrencyExchange>
+      <ram:SourceCurrencyCode listID="ISO 4217 3A" listVersionID="2007-06-18">SGD</ram:SourceCurrencyCode>
+    </ram:ApplicableOriginCurrencyExchange>
+    <ram:ApplicableRating>
+      <ram:TypeCode>F</ram:TypeCode>
+      <ram:IncludedMasterConsignmentItem>
+        <ram:SequenceNumeric>1</ram:SequenceNumeric>
+        <ram:GrossWeightMeasure unitCode="KGM">5</ram:GrossWeightMeasure>
+        <ram:PieceQuantity>1</ram:PieceQuantity>
+        <ram:NatureIdentificationTransportCargo>
+          <ram:Identification>CONSOLLAPTOPS 12345 90416274 DELIVERY</ram:Identification>
+        </ram:NatureIdentificationTransportCargo>
+        <ram:ApplicableFreightRateServiceCharge>
+          <ram:CategoryCode>M</ram:CategoryCode>
+          <ram:ChargeableWeightMeasure unitCode="KGM">3.523</ram:ChargeableWeightMeasure>
+          <ram:AppliedRate>5</ram:AppliedRate>
+          <ram:AppliedAmount currencyID="SGD">5</ram:AppliedAmount>
+        </ram:ApplicableFreightRateServiceCharge>
+      </ram:IncludedMasterConsignmentItem>
+      <ram:IncludedMasterConsignmentItem>
+        <ram:SequenceNumeric>2</ram:SequenceNumeric>
+        <ram:Information>NDA</ram:Information>
+      </ram:IncludedMasterConsignmentItem>
+    </ram:ApplicableRating>
+    <ram:ApplicableTotalRating>
+      <ram:TypeCode>F</ram:TypeCode>
+      <ram:ApplicablePrepaidCollectMonetarySummation>
+        <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+        <ram:WeightChargeTotalAmount currencyID="SGD">800</ram:WeightChargeTotalAmount>
+        <ram:GrandTotalAmount currencyID="SGD">800</ram:GrandTotalAmount>
+      </ram:ApplicablePrepaidCollectMonetarySummation>
+    </ram:ApplicableTotalRating>
+  </MasterConsignment>
+</Waybill>
+
+
+<!-- @ ApplicableRating/<ram:IncludedMasterConsignmentItem> -->

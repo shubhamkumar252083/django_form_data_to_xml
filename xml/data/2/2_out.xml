@@ -1,0 +1,82 @@
+<rsm__colon__FlightManifest xmlns__colon__ram="iata__colon__datamodel__colon__3" xmlns__colon__rsm="iata__colon__flightmanifest__colon__1">
+  <rsm__colon__MessageHeaderDocument>
+    <ram__colon__ID>EK011111NOV2022</ram__colon__ID>
+    <ram__colon__Name>Transport Loading Report</ram__colon__Name>
+    <ram__colon__TypeCode listID="1001" listVersionID="D09A">122</ram__colon__TypeCode>
+    <ram__colon__IssueDateTime>2022-11-11T10__colon__32__colon__16</ram__colon__IssueDateTime>
+    <ram__colon__PurposeCode>Creation</ram__colon__PurposeCode>
+    <ram__colon__VersionID>2.0</ram__colon__VersionID>
+    <ram__colon__ConversationID>df9d2e2e-b854-468c-a484-ad705c73f5ef</ram__colon__ConversationID>
+    <ram__colon__SenderParty>
+      <ram__colon__PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram__colon__PrimaryID>
+    </ram__colon__SenderParty>
+    <ram__colon__RecipientParty>
+      <ram__colon__PrimaryID schemeID="P">CSGCUS86CUSGW</ram__colon__PrimaryID>
+    </ram__colon__RecipientParty>
+  </rsm__colon__MessageHeaderDocument>
+  <rsm__colon__BusinessHeaderDocument>
+    <ram__colon__ID>EK011111NOV2022</ram__colon__ID>
+  </rsm__colon__BusinessHeaderDocument>
+  <rsm__colon__LogisticsTransportMovement>
+    <ram__colon__StageCode>EK0111</ram__colon__StageCode>
+    <ram__colon__ModeCode listID="Recommendation 19" listVersionID="2">4</ram__colon__ModeCode>
+    <ram__colon__ID>EK0111</ram__colon__ID>
+    <ram__colon__SequenceNumeric>1</ram__colon__SequenceNumeric>
+    <ram__colon__UsedLogisticsTransportMeans>
+      <ram__colon__Name>BD</ram__colon__Name>
+    </ram__colon__UsedLogisticsTransportMeans>
+    <ram__colon__DepartureEvent>
+      <ram__colon__DepartureOccurrenceDateTime>2022-11-11T01__colon__30__colon__00</ram__colon__DepartureOccurrenceDateTime>
+      <ram__colon__DepartureDateTimeTypeCode>S</ram__colon__DepartureDateTimeTypeCode>
+      <ram__colon__OccurrenceDepartureLocation>
+        <ram__colon__ID>SIN</ram__colon__ID>
+        <ram__colon__TypeCode>Airport</ram__colon__TypeCode>
+      </ram__colon__OccurrenceDepartureLocation>
+    </ram__colon__DepartureEvent>
+  </rsm__colon__LogisticsTransportMovement>
+  <rsm__colon__ArrivalEvent>
+    <ram__colon__ArrivalOccurrenceDateTime>2022-11-11T06__colon__30__colon__00</ram__colon__ArrivalOccurrenceDateTime>
+    <ram__colon__ArrivalDateTimeTypeCode>S</ram__colon__ArrivalDateTimeTypeCode>
+    <ram__colon__DepartureOccurrenceDateTime>2022-11-11T01__colon__30__colon__00</ram__colon__DepartureOccurrenceDateTime>
+    <ram__colon__DepartureDateTimeTypeCode>S</ram__colon__DepartureDateTimeTypeCode>
+    <ram__colon__OccurrenceArrivalLocation>
+      <ram__colon__ID>DAC</ram__colon__ID>
+      <ram__colon__TypeCode>Airport</ram__colon__TypeCode>
+    </ram__colon__OccurrenceArrivalLocation>
+    <ram__colon__AssociatedTransportCargo>
+      <ram__colon__TypeCode>BLK</ram__colon__TypeCode>
+      <ram__colon__IncludedMasterConsignment>
+        <ram__colon__GrossWeightMeasure unitCode="KGM">24</ram__colon__GrossWeightMeasure>
+        <ram__colon__GrossVolumeMeasure unitCode="MTQ">32</ram__colon__GrossVolumeMeasure>
+        <ram__colon__TotalPieceQuantity>5</ram__colon__TotalPieceQuantity>
+        <ram__colon__SummaryDescription>M1</ram__colon__SummaryDescription>
+        <ram__colon__TransportSplitDescription>P</ram__colon__TransportSplitDescription>
+        <ram__colon__TransportContractDocument>
+          <ram__colon__ID>176-01112228</ram__colon__ID>
+        </ram__colon__TransportContractDocument>
+        <ram__colon__OriginLocation>
+          <ram__colon__ID>SIN</ram__colon__ID>
+        </ram__colon__OriginLocation>
+        <ram__colon__FinalDestinationLocation>
+          <ram__colon__ID>DAC</ram__colon__ID>
+        </ram__colon__FinalDestinationLocation>
+      </ram__colon__IncludedMasterConsignment>
+      <ram__colon__IncludedMasterConsignment__duplicate__>
+        <ram__colon__GrossWeightMeasure unitCode="KGM">24</ram__colon__GrossWeightMeasure>
+        <ram__colon__GrossVolumeMeasure unitCode="MTQ">32</ram__colon__GrossVolumeMeasure>
+        <ram__colon__TotalPieceQuantity>5</ram__colon__TotalPieceQuantity>
+        <ram__colon__SummaryDescription>M3</ram__colon__SummaryDescription>
+        <ram__colon__TransportSplitDescription>T</ram__colon__TransportSplitDescription>
+        <ram__colon__TransportContractDocument>
+          <ram__colon__ID>176-01112223</ram__colon__ID>
+        </ram__colon__TransportContractDocument>
+        <ram__colon__OriginLocation>
+          <ram__colon__ID>SIN</ram__colon__ID>
+        </ram__colon__OriginLocation>
+        <ram__colon__FinalDestinationLocation>
+          <ram__colon__ID>DAC</ram__colon__ID>
+        </ram__colon__FinalDestinationLocation>
+      </ram__colon__IncludedMasterConsignment__duplicate__>
+    </ram__colon__AssociatedTransportCargo>
+  </rsm__colon__ArrivalEvent>
+</rsm__colon__FlightManifest>

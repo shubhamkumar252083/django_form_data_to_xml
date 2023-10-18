@@ -1,0 +1,132 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<rsm:HouseWaybill xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:housewaybill:1">
+  <rsm:MessageHeaderDocument>
+    <ram:ID>3e756a95-e6b2-4632-8254-3f9cf04057ce</ram:ID>
+    <ram:Name>House waybill</ram:Name>
+    <ram:TypeCode listID="1001" listVersionID="D09A">703</ram:TypeCode>
+    <ram:IssueDateTime>2022-11-11T10:32:35</ram:IssueDateTime>
+    <ram:PurposeCode>Creation</ram:PurposeCode>
+    <ram:VersionID>3.00</ram:VersionID>
+    <ram:ConversationID>69184383-297c-4e44-ba34-db37a3c63f26</ram:ConversationID>
+    <ram:SenderParty>
+      <ram:PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram:PrimaryID>
+    </ram:SenderParty>
+    <ram:RecipientParty>
+      <ram:PrimaryID schemeID="P">CSGCUS86CUSGW</ram:PrimaryID>
+    </ram:RecipientParty>
+  </rsm:MessageHeaderDocument>
+  <rsm:BusinessHeaderDocument>
+    <ram:ID>SIN1702</ram:ID>
+    <ram:SignatoryConsignorAuthentication>
+      <ram:Signatory>XXX</ram:Signatory>
+    </ram:SignatoryConsignorAuthentication>
+    <ram:SignatoryCarrierAuthentication>
+      <ram:ActualDateTime>2002-07-01T05:10:10</ram:ActualDateTime>
+      <ram:Signatory>XXX</ram:Signatory>
+      <ram:IssueAuthenticationLocation>
+        <ram:Name>XXX</ram:Name>
+      </ram:IssueAuthenticationLocation>
+    </ram:SignatoryCarrierAuthentication>
+  </rsm:BusinessHeaderDocument>
+  <rsm:MasterConsignment>
+    <ram:IncludedTareGrossWeightMeasure unitCode="KGM">23</ram:IncludedTareGrossWeightMeasure>
+    <ram:TotalPieceQuantity>5</ram:TotalPieceQuantity>
+    <ram:TransportContractDocument>
+      <ram:ID>176-01112228</ram:ID>
+    </ram:TransportContractDocument>
+    <ram:OriginLocation>
+      <ram:ID>SIN</ram:ID>
+    </ram:OriginLocation>
+    <ram:FinalDestinationLocation>
+      <ram:ID>DAC</ram:ID>
+    </ram:FinalDestinationLocation>
+    <ram:IncludedHouseConsignment>
+      <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+      <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+      <ram:DeclaredValueForCustomsAmount currencyID="TWD">0</ram:DeclaredValueForCustomsAmount>
+      <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+      <ram:InsuranceValueAmount currencyID="TWD">0</ram:InsuranceValueAmount>
+      <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+      <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+      <ram:IncludedTareGrossWeightMeasure unitCode="KGM">0.60</ram:IncludedTareGrossWeightMeasure>
+      <ram:TotalPieceQuantity>2</ram:TotalPieceQuantity>
+      <ram:SummaryDescription>H1M1</ram:SummaryDescription>
+      <ram:ConsignorParty>
+        <ram:Name>NANJOMG INDUSTRIAL CO LTD</ram:Name>
+        <ram:PostalStructuredAddress>
+          <ram:PostcodeCode>243</ram:PostcodeCode>
+          <ram:StreetName>NO102 SHOU SHAN ROAD</ram:StreetName>
+          <ram:CityName>NEW TAIPEI</ram:CityName>
+          <ram:CountryID schemeVersionID="second edition 2006">TW</ram:CountryID>
+        </ram:PostalStructuredAddress>
+        <ram:DefinedTradeContact>
+          <ram:DirectTelephoneCommunication>
+            <ram:CompleteNumber>000000</ram:CompleteNumber>
+          </ram:DirectTelephoneCommunication>
+        </ram:DefinedTradeContact>
+      </ram:ConsignorParty>
+      <ram:ConsigneeParty>
+        <ram:Name>PT ASTRA OTOPARTS TBK</ram:Name>
+        <ram:PostalStructuredAddress>
+          <ram:PostcodeCode>14250</ram:PostcodeCode>
+          <ram:StreetName>JL PEGANGSAAN DUA KM 2 2 PEGANGSAAN</ram:StreetName>
+          <ram:CityName>NEW YORK</ram:CityName>
+          <ram:CountryID schemeVersionID="second edition 2006">US</ram:CountryID>
+        </ram:PostalStructuredAddress>
+        <ram:DefinedTradeContact>
+          <ram:DirectTelephoneCommunication>
+            <ram:CompleteNumber>00000</ram:CompleteNumber>
+          </ram:DirectTelephoneCommunication>
+        </ram:DefinedTradeContact>
+      </ram:ConsigneeParty>
+      <ram:AssociatedParty>
+        <ram:Name>PT ASTRA OTOPARTS TBK</ram:Name>
+        <ram:RoleCode listID="3035" listVersionID="D09A">NI</ram:RoleCode>
+        <ram:PostalStructuredAddress>
+          <ram:PostcodeCode>14250</ram:PostcodeCode>
+          <ram:StreetName>JL PEGANGSAAN DUA KM 2 2 PEGANGSAAN</ram:StreetName>
+          <ram:CityName>NEW YORK</ram:CityName>
+          <ram:CountryID schemeVersionID="second edition 2006">US</ram:CountryID>
+        </ram:PostalStructuredAddress>
+        <ram:DefinedTradeContact>
+          <ram:DirectTelephoneCommunication>
+            <ram:CompleteNumber>00000</ram:CompleteNumber>
+          </ram:DirectTelephoneCommunication>
+          <ram:FaxCommunication>
+            <ram:CompleteNumber />
+          </ram:FaxCommunication>
+        </ram:DefinedTradeContact>
+      </ram:AssociatedParty>
+      <ram:OriginLocation>
+        <ram:ID>SIN</ram:ID>
+      </ram:OriginLocation>
+      <ram:FinalDestinationLocation>
+        <ram:ID>DAC</ram:ID>
+      </ram:FinalDestinationLocation>
+      <ram:HandlingSPHInstructions>
+        <ram:DescriptionCode>XXX</ram:DescriptionCode>
+      </ram:HandlingSPHInstructions>
+      <ram:ApplicableOriginCurrencyExchange>
+        <ram:SourceCurrencyCode listID="ISO 4217 3A" listVersionID="2007-06-18">TWD</ram:SourceCurrencyCode>
+      </ram:ApplicableOriginCurrencyExchange>
+      <ram:IncludedHouseConsignmentItem>
+        <ram:SequenceNumeric>1</ram:SequenceNumeric>
+        <ram:GrossWeightMeasure unitCode="KGM">0.60</ram:GrossWeightMeasure>
+        <ram:PieceQuantity>2</ram:PieceQuantity>
+        <ram:Information>NDA</ram:Information>
+        <ram:NatureIdentificationTransportCargo>
+          <ram:Identification>H1M1</ram:Identification>
+        </ram:NatureIdentificationTransportCargo>
+        <ram:TransportLogisticsPackage>
+          <ram:ItemQuantity>2</ram:ItemQuantity>
+          <ram:GrossWeightMeasure unitCode="KGM">0.60</ram:GrossWeightMeasure>
+        </ram:TransportLogisticsPackage>
+        <ram:ApplicableFreightRateServiceCharge>
+          <ram:ChargeableWeightMeasure unitCode="KGM">0.60</ram:ChargeableWeightMeasure>
+        </ram:ApplicableFreightRateServiceCharge>
+      </ram:IncludedHouseConsignmentItem>
+    </ram:IncludedHouseConsignment>
+  </rsm:MasterConsignment>
+</rsm:HouseWaybill>
+

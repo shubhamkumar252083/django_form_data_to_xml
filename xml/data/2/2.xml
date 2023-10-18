@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsm:FlightManifest xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:flightmanifest:1">
+  <rsm:MessageHeaderDocument>
+    <ram:ID>EK011111NOV2022</ram:ID>
+    <ram:Name>Transport Loading Report</ram:Name>
+    <ram:TypeCode listID="1001" listVersionID="D09A">122</ram:TypeCode>
+    <ram:IssueDateTime>2022-11-11T10:32:16</ram:IssueDateTime>
+    <ram:PurposeCode>Creation</ram:PurposeCode>
+    <ram:VersionID>2.0</ram:VersionID>
+    <ram:ConversationID>df9d2e2e-b854-468c-a484-ad705c73f5ef</ram:ConversationID>
+    <ram:SenderParty>
+      <ram:PrimaryID schemeID="P">CSGAIR01DXBFMEK</ram:PrimaryID>
+    </ram:SenderParty>
+    <ram:RecipientParty>
+      <ram:PrimaryID schemeID="P">CSGCUS86CUSGW</ram:PrimaryID>
+    </ram:RecipientParty>
+  </rsm:MessageHeaderDocument>
+  <rsm:BusinessHeaderDocument>
+    <ram:ID>EK011111NOV2022</ram:ID>
+  </rsm:BusinessHeaderDocument>
+  <rsm:LogisticsTransportMovement>
+    <ram:StageCode>EK0111</ram:StageCode>
+    <ram:ModeCode listID="Recommendation 19" listVersionID="2">4</ram:ModeCode>
+    <ram:ID>EK0111</ram:ID>
+    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+    <ram:UsedLogisticsTransportMeans>
+      <ram:Name>BD</ram:Name>
+    </ram:UsedLogisticsTransportMeans>
+    <ram:DepartureEvent>
+      <ram:DepartureOccurrenceDateTime>2022-11-11T01:30:00</ram:DepartureOccurrenceDateTime>
+      <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+      <ram:OccurrenceDepartureLocation>
+        <ram:ID>SIN</ram:ID>
+        <ram:TypeCode>Airport</ram:TypeCode>
+      </ram:OccurrenceDepartureLocation>
+    </ram:DepartureEvent>
+  </rsm:LogisticsTransportMovement>
+  <rsm:ArrivalEvent>
+    <ram:ArrivalOccurrenceDateTime>2022-11-11T06:30:00</ram:ArrivalOccurrenceDateTime>
+    <ram:ArrivalDateTimeTypeCode>S</ram:ArrivalDateTimeTypeCode>
+    <ram:DepartureOccurrenceDateTime>2022-11-11T01:30:00</ram:DepartureOccurrenceDateTime>
+    <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+    <ram:OccurrenceArrivalLocation>
+      <ram:ID>DAC</ram:ID>
+      <ram:TypeCode>Airport</ram:TypeCode>
+    </ram:OccurrenceArrivalLocation>
+    <ram:AssociatedTransportCargo>
+      <ram:TypeCode>BLK</ram:TypeCode>
+      <ram:IncludedMasterConsignment>
+        <ram:GrossWeightMeasure unitCode="KGM">24</ram:GrossWeightMeasure>
+        <ram:GrossVolumeMeasure unitCode="MTQ">32</ram:GrossVolumeMeasure>
+        <ram:TotalPieceQuantity>5</ram:TotalPieceQuantity>
+        <ram:SummaryDescription>M1</ram:SummaryDescription>
+        <ram:TransportSplitDescription>P</ram:TransportSplitDescription>
+        <ram:TransportContractDocument>
+          <ram:ID>176-01112228</ram:ID>
+        </ram:TransportContractDocument>
+        <ram:OriginLocation>
+          <ram:ID>SIN</ram:ID>
+        </ram:OriginLocation>
+        <ram:FinalDestinationLocation>
+          <ram:ID>DAC</ram:ID>
+        </ram:FinalDestinationLocation>
+      </ram:IncludedMasterConsignment>
+      <ram:IncludedMasterConsignment>
+        <ram:GrossWeightMeasure unitCode="KGM">24</ram:GrossWeightMeasure>
+        <ram:GrossVolumeMeasure unitCode="MTQ">32</ram:GrossVolumeMeasure>
+        <ram:TotalPieceQuantity>5</ram:TotalPieceQuantity>
+        <ram:SummaryDescription>M3</ram:SummaryDescription>
+        <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+        <ram:TransportContractDocument>
+          <ram:ID>176-01112223</ram:ID>
+        </ram:TransportContractDocument>
+        <ram:OriginLocation>
+          <ram:ID>SIN</ram:ID>
+        </ram:OriginLocation>
+        <ram:FinalDestinationLocation>
+          <ram:ID>DAC</ram:ID>
+        </ram:FinalDestinationLocation>
+      </ram:IncludedMasterConsignment>
+    </ram:AssociatedTransportCargo>
+  </rsm:ArrivalEvent>
+</rsm:FlightManifest>
+
+<!-- check <ram:IncludedMasterConsignment> -->
