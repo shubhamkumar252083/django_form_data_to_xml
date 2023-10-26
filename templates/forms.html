@@ -3,7 +3,7 @@
 {% block content %}
 <form method="post">  
   {% for text, value in form_fields.items %}
-      <label for="{{ text }}">{{ text }}</label>
+      <label for="{{ text }}">{% remove_roots  text %}</label>
       <input type="text" name="{{ text }}" id="{{ text }}" value=" {{ value }} ">
       <br>
   {% endfor %}

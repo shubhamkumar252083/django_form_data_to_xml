@@ -84,7 +84,9 @@ dict_one = {
   'root/root/rsm:HouseWaybill/rsm:MasterConsignment/ram:IncludedHouseConsignment/ram:IncludedHouseConsignmentItem/ram:ApplicableFreightRateServiceCharge/ram:ChargeableWeightMeasure': '0.60'
 }
 
-text_to_add_one = {}
+text_to_add_one = {"first":["""<?xml version="1.0" encoding="utf-8"?>""", ], "last":[]}
+
+missing_text_one = """<ram:FaxCommunication><ram:CompleteNumber /></ram:FaxCommunication>"""
 
 dict_two = {
   'root/root/rsm:FlightManifest (attribute_name)-xmlns:ram': 'iata:datamodel:3',
@@ -143,7 +145,7 @@ dict_two = {
   'root/root/rsm:FlightManifest/rsm:ArrivalEvent/ram:AssociatedTransportCargo/ram:IncludedMasterConsignment__duplicate__/ram:FinalDestinationLocation/ram:ID': 'DAC'
 }
 
-text_to_add_two = {}
+text_to_add_two = {"first":["""<?xml version="1.0" encoding="utf-8"?>""", ], "last":[]}
 
 dict_three = {
   'root/root/check/MessageHeaderDocument/ram:ID': 'f17ec2f9-a67d-4785-9a42-272edc272269',
@@ -231,4 +233,6 @@ dict_three = {
   'root/root/check/MasterConsignment/ram:ApplicableTotalRating/ram:ApplicablePrepaidCollectMonetarySummation/ram:GrandTotalAmount': '800'
 }
 
-text_to_add_three = {}
+text_to_add_three = {"first":["""<?xml version="1.0" encoding="utf-8"?>""", """<Waybill xmlns:rsm="iata:housewaybill:1" xmlns:ram="iata:datamodel:3" xmlns="iata:waybill:1">"""], "last":["</Waybill>"]}
+
+missing_text_three = """<ram:StageCode />"""

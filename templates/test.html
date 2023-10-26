@@ -1,3 +1,4 @@
+{% load tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,18 @@
   <title>XML RENDER</title>
 </head>
 <body>
-  <h1>WORKING</h1>
+  <h1>working</h1>
+  <p>{% remove_roots "Hello, World" %}</p>
+  <p>
+    {% for i in "   " %}
+    {{ i }}&nbsp;
+    {% endfor %}
+    {{ html_code | escape}}
+  </p>
+  <div>
+    <div>
+    </div>
+  </div>
 </body>
 </html>
+

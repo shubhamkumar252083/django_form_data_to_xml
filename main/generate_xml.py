@@ -34,3 +34,24 @@ def dict_to_xml(d):
     # formatted_xml = dom.toprettyxml()
     # print(f'formatted_xml ==> {formatted_xml}')
     # return formatted_xml
+
+
+def get_xml_in_proper_format(xml_text, text_to_add):
+    data = []
+    data.extend(text_to_add["first"])
+    xml_text = xml_text.replace(":", "__colon__").replace("<root><root>" , "").replace("</root></root>", "")
+    dom = xml.dom.minidom.parseString(xml_text)
+    formatted_xml = dom.toprettyxml()
+    # Remove the XML declaration
+    formatted_xml = formatted_xml.replace('<?xml version="1.0" ?>\n', '')
+    for i in formatted_xml.split("\n"):
+        if "__colon__" in i:
+            data.append(i.replace("__colon__", ":"))
+        elif i in ("<root>", "</root>", "<check>", "</check>"):
+            continue
+        elif "<check>" in i or "</check>" in i:
+            continue 
+        else:
+            data.append(i)
+    data.extend(text_to_add["last"])
+    return data

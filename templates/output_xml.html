@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>XML OUTPUT</h1>
-<p>{{ html_code | escape }}</p>
+<div>
+  {% for item in data_list %}
+  <p>{{ item | escape}}</p>
+  {% endfor %}
+</div>
 {% endblock %}
