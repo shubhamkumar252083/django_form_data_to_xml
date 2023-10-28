@@ -44,9 +44,10 @@ def get_xml_in_proper_format(xml_text, text_to_add):
     formatted_xml = dom.toprettyxml()
     # Remove the XML declaration
     formatted_xml = formatted_xml.replace('<?xml version="1.0" ?>\n', '')
+    # print(formatted_xml) # properly formated xml with proper indentation.
     for i in formatted_xml.split("\n"):
-        if "__colon__" in i:
-            data.append(i.replace("__colon__", ":"))
+        if "__colon__" in i or "__duplicate__" in i:
+            data.append(i.replace("__colon__", ":").replace("__duplicate__", ""))
         elif i in ("<root>", "</root>", "<check>", "</check>"):
             continue
         elif "<check>" in i or "</check>" in i:

@@ -1,24 +1,49 @@
-{% load tags %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>XML RENDER</title>
+  <title>Show Specific Form Fields On Button Click</title>
+  <style>
+    /* Initially, hide the form group */
+    #form-group {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>working</h1>
-  <p>{% remove_roots "Hello, World" %}</p>
-  <p>
-    {% for i in "   " %}
-    {{ i }}&nbsp;
-    {% endfor %}
-    {{ html_code | escape}}
-  </p>
-  <div>
-    <div>
-    </div>
+  <button id="show-form-btn">Show Form Fields</button>
+  <div id="form-group">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+    </form>
   </div>
+
+  <form>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    // Get references to the button and the form group
+    var showFormButton = document.getElementById("show-form-btn");
+    var formGroup = document.getElementById("form-group");
+
+    // Add an event listener to the button to toggle the form group's visibility
+    showFormButton.addEventListener("click", function() {
+      if (formGroup.style.display === "none" || formGroup.style.display === "") {
+        formGroup.style.display = "block";
+      } else {
+        formGroup.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
-
